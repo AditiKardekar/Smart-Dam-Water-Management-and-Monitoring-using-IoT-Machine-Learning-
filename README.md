@@ -38,21 +38,19 @@ Instead of relying on manual observation, the system:
 
  ## How to Run
 - Clone the repository
-git clone https://github.com/your-username/smart-dam-monitoring.git
+  - git clone https://github.com/AditiKardekar/Smart-Dam-Water-Management-and-Monitoring-using-IoT-Machine-Learning-.git
 
 - Navigate to project folder
-cd smart-dam-monitoring
+  - cd smart-dam-monitoring
 
 - Install dependencies
-npm install
+  - npm install
 
 - Run the project
-npm start
+  - npm start
 
 ## Future Improvements
 - Blockchain-based secure data sharing
 - Edge computing for faster response
 - Digital twin simulation of dams
 - Satellite-based monitoring integration
-
-- 
