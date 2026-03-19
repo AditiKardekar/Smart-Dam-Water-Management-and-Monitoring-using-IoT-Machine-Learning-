@@ -1,7 +1,11 @@
 # Smart Dam Water Level Monitoring System
 
 > **IoT + ML + Real-Time Web Dashboard** for sustainable dam management and flood prevention.
+
 > Published at IEEE INCET / ICRITO 2024–2025 · MIT World Peace University, Pune
+
+>Live Demo:
+https://aditikardekar.github.io/Smart-Dam-Water-Management-and-Monitoring-using-IoT-Machine-Learning-/
 
 ---
 
