@@ -1,12 +1,12 @@
 <<<<<<< HEAD
-# 🌊 Smart Dam Water Level Monitoring System
+# Smart Dam Water Level Monitoring System
 
 > **IoT + ML + Real-Time Web Dashboard** for sustainable dam management and flood prevention.
 > Published at IEEE INCET / ICRITO 2024–2025 · MIT World Peace University, Pune
 
 ---
 
-## 📸 Demo
+## Demo
 
 ![Dashboard Screenshot](docs/dashboard_screenshot.jpeg)
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 🧠 Overview
+## Overview
 
 This project implements a complete **IoT-based smart dam water level monitoring system** that:
 
@@ -36,7 +36,7 @@ This project implements a complete **IoT-based smart dam water level monitoring 
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -57,7 +57,7 @@ This project implements a complete **IoT-based smart dam water level monitoring 
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 dam-monitoring/
@@ -76,7 +76,7 @@ dam-monitoring/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone the repo
 
@@ -107,7 +107,7 @@ Open `frontend/index.html` in any browser **or** visit:
 http://localhost:5000
 ```
 
-> ⚡ The dashboard works in **demo mode** even without the backend — sensor data is simulated in JavaScript.
+> The dashboard works in **demo mode** even without the backend — sensor data is simulated in JavaScript.
 
 ### 5. Train ML models (optional)
 
@@ -119,7 +119,7 @@ python train.py
 
 ---
 
-## 🔌 Hardware Setup (ESP32)
+## Hardware Setup (ESP32)
 
 ### Components
 
@@ -154,7 +154,7 @@ python train.py
 
 ---
 
-## 🌐 API Reference
+## API Reference
 
 Base URL: `http://localhost:5000`
 
@@ -186,7 +186,7 @@ Base URL: `http://localhost:5000`
 
 ---
 
-## 🤖 ML Models
+## ML Models
 
 ### Algorithm (from paper pseudocode)
 
@@ -196,7 +196,7 @@ Output: Predicted level Ŵ_{t+k}  and  Risk Score Rs
 
 1. Collect & preprocess sensor streams
    - Moving average filter for noise reduction
-   - Normalize: x'(t) = (x(t) - μ) / σ
+   - Normalize
 
 2. Feature extraction
    - Temporal features: mean, variance, rate of change
@@ -208,9 +208,6 @@ Output: Predicted level Ŵ_{t+k}  and  Risk Score Rs
    - SVM:      decision boundary refinement
 
 4. Predict (online)
-   - Ŵ_{t+k} = LSTM(x'(t+1))
-   - Pa       = XGBoost(x'(t+1))
-   - Rs       = α·Pa + β·ΔŴ
 
 5. Decision
    - Rs < threshold  → continue monitoring
@@ -228,7 +225,7 @@ RED    (Danger)  : > 85%        → auto gate open + alert
 
 ---
 
-## 📊 Performance Comparison
+## Performance Comparison
 
 | Paper | Efficiency (%) | Reliability (%) | Response Time (s) |
 |---|---|---|---|
@@ -242,7 +239,7 @@ RED    (Danger)  : > 85%        → auto gate open + alert
 
 ---
 
-## 🔐 Security
+## Security
 
 - **AES-256** encryption for sensor data transmission
 - Anomaly detection to flag cyber-attacks or faulty sensors
@@ -251,7 +248,7 @@ RED    (Danger)  : > 85%        → auto gate open + alert
 
 ---
 
-## 🔭 Future Work
+## Future Work
 
 - [ ] LSTM model with full TensorFlow/PyTorch training
 - [ ] LPWAN / NB-IoT long-range communication
@@ -279,78 +276,20 @@ If you use this work, please cite:
 
 ---
 
-## 👩‍💻 Authors
+## Authors
 
-| Name | Email |
+| Name | Role |
 |---|---|
-| Kristina Maskarenkhas | kristinam2510@gmail.com |
-| Khushi Gulgulia | khushigulgulia56@gmail.com |
-| Harshada Gaikwad | harshadagaikwad993@gmail.com |
-| Aditi Kardekar | aditi.s.kardekar@gmail.com |
-| Vitthal Gutte (Guide) | vitthalgutte2014@gmail.com |
+| Kristina Maskarenkhas | Developer |
+| Khushi Gulgulia | Developer |
+| Harshada Gaikwad | Developer |
+| Aditi Kardekar | Developer |
+| Vitthal Gutte | Guide / Mentor |
 
-**Institution:** Department of Computer Engineering and Technology, MIT World Peace University, Pune, Maharashtra, India
+> 💬 For queries or collaboration, feel free to reach out via GitHub — [@AditiKardekar](https://github.com/AditiKardekar)
 
 ---
 
-## 📝 License
+## License
 
 MIT License — see [LICENSE](LICENSE) for details.
-=======
-# Smart-Dam-Water-Management-and-Monitoring-using-IoT-Machine-Learning-
-A Smart Dam Water Management System uses IoT sensors and machine learning to monitor water levels, inflow, and weather data in real time. It predicts demand and flood risks, enabling efficient water release, improved resource management, and enhanced safety for surrounding areas.
-
-## Overview
-This project is a smart monitoring system that helps manage dam water levels using IoT sensors and intelligent automation.
-Instead of relying on manual observation, the system:
-- Tracks water levels in real-time
-- Sends alerts when levels become risky
-- Helps control dam gates efficiently
-
-## Core Idea
-- Monitors water level continuously
-- Detects dangerous thresholds
-- Sends alerts to authorities
-- Supports automated gate control
-- Displays data on a dashboard
-- Sensors → Microcontroller → Wireless Network → Cloud → AI Models → Dashboard → Gate Control
-
-## Tech Stack
-1. Hardware
-- Ultrasonic Sensors
-- Rainfall Sensors
-- Pressure Sensors
-- Arduino / Raspberry Pi
-
-2. Software
-- Cloud / Backend system
-- Cloud Computing (AWS / Firebase / Custom Backend)
-- Machine Learning Models:
-  - LSTM (prediction)
-  - XGBoost (anomaly detection)
-  - SVM (classification)
-
-## Demo 
-
-
-
-
- ## How to Run
-- Clone the repository
-  - git clone https://github.com/AditiKardekar/Smart-Dam-Water-Management-and-Monitoring-using-IoT-Machine-Learning-.git
-
-- Navigate to project folder
-  - cd smart-dam-monitoring
-
-- Install dependencies
-  - npm install
-
-- Run the project
-  - npm start
-
-## Future Improvements
-- Blockchain-based secure data sharing
-- Edge computing for faster response
-- Digital twin simulation of dams
-- Satellite-based monitoring integration
->>>>>>> fcb2e02ad828461d67a357274651390a38569fa1
