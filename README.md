@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Smart Dam Water Level Monitoring System
 
 > **IoT + ML + Real-Time Web Dashboard** for sustainable dam management and flood prevention.
